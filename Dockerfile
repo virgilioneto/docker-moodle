@@ -1,5 +1,5 @@
 FROM php:5-apache
-MAINTAINER Virgilio Missão Neto
+MAINTAINER Virgilio Missão Neto <virgilio.missao.neto@gmail.com>
 
 RUN curl -fsSL 'https://download.moodle.org/download.php/direct/stable31/moodle-latest-31.tgz' -o moodle.tgz \
 	&& mkdir -p moodle \

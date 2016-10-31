@@ -18,12 +18,6 @@ RUN docker-php-ext-install -j$(nproc) iconv mcrypt mysqli gd intl xmlrpc zip
 
 RUN mkdir -p /var/www/moodledata
 
-RUN chomd -R 755 /var/www/html
-RUN chown -R www-data:www-data /var/www/html
-
-RUN chmod -R 777 /var/www/moodledata
-RUN chown -R www-data:www-data /var/www/moodledata
-
 VOLUME /var/www/html
 VOLUME /var/www/moodledata
 

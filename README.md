@@ -4,13 +4,13 @@
 
 You can mount volumes for Moodle root and moodle data to keep all data on an external storage.
 
-* Moodle root: -v /path/to/mymoodle:/var/www/html
+* Moodle root: -v /path/to/mymoodle:/var/www/html:ro
 * Moodle data: -v /path/to/moodledata:/var/www/moodledata
 
 ### Permissions
 
-* Moodle root: This folder have 0755 permission, so to setup the site and/or install some plugin you need to copy files using mounted volume;
-* Moodle data: This folder have 0777 permission becaus moode uses it to store data;
+* Moodle root: This folder is read only, so to setup the site and/or install some plugin you need to copy files using mounted volume;
+* Moodle data: This folder hava full read/write because moodle uses it to store data;
 
 ## TODO
 

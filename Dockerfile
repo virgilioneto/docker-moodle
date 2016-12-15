@@ -1,4 +1,4 @@
-FROM php:5-apache
+FROM php:7-apache
 MAINTAINER Virgilio Missão Neto <virgilio.missao.neto@gmail.com>
 
 RUN curl -fsSL 'https://download.moodle.org/download.php/direct/stable32/moodle-3.2.tgz' -o moodle.tgz \
